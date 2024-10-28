@@ -7,7 +7,6 @@ from = "/*"
 to = "/index.html"
 status = 200
 
-# Comenta o elimina esta sección de Edge Functions
-# [[edge_functions]]
-# path = "netlify/edge-functions"
-# function = "server-render"
+[[edge_functions]]
+path = "/netlify/edge-functions"
+function = "server-render"
