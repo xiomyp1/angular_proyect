@@ -8,5 +8,5 @@ to = "/index.html"
 status = 200
 
 [[edge_functions]]
-path = "/netlify/edge-functions"
+path = "/netlify/functions"
 function = "server-render"
