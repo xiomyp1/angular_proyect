@@ -1,0 +1,12 @@
+[build]
+command = "npm run build"  # Comando de construcción para tu proyecto
+publish = "dist"           # Ruta de la carpeta donde está tu aplicación compilada
+
+[functions]
+directory = "netlify/functions"  # Ajusta según tu estructura de carpetas
+node_bundler = "esbuild"         # Para empaquetar con esbuild, compatible con muchas dependencias
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
