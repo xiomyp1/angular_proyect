@@ -1,8 +1,7 @@
 [build]
-  base = "" # si es necesario, especifica otra carpeta base (la mayoría de las veces, puedes dejarla vacía)
-  publish = "dist/angular_proyect"
+  publish = "dist/angular_proyect/browser"
   command = "ng build --configuration production"
-  
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
