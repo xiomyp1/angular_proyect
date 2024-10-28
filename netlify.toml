@@ -1,13 +1,12 @@
 [build]
-  publish = "dist/angular_proyect/browser"
-  command = "ng build --configuration production"
+publish = "dist/angular_proyect/browser"
+command = "ng build --configuration production"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/*"
+to = "/index.html"
+status = 200
 
 [[edge_functions]]
-path = "netlify\edge-functions"
+path = "/netlify/edge-functions"
 function = "server-render"
-
